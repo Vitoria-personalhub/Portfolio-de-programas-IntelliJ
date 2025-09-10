@@ -1,1 +1,1 @@
-Potfólio destinado a programas e exercícios feitos em java a partir da IDE IntelliJ
+Potfólio destinado a programas e exercícios feitos em JAVA a partir da IDE IntelliJ
