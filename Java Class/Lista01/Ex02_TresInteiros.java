@@ -1,3 +1,5 @@
+package Lista01;
+
 import java.util.Scanner;
 
 public class Ex02_TresInteiros {
@@ -8,7 +10,9 @@ public class Ex02_TresInteiros {
         int NumDois;
         int NumTres;
 
+        System.out.println(" ");
         System.out.println("MEDIA ARITMÉTICA - 3 NÚMEROS INTEIROS");
+        System.out.println(" ");
 
         System.out.print("Digite o primeiro número inteiro: ");
         NumUm = input.nextInt();

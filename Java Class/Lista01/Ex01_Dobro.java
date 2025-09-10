@@ -1,10 +1,14 @@
+package Lista01;
+
 import java.util.Scanner;
 
-public class Ex04_Desconto {
+public class Ex01_Dobro {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
+        System.out.println(" ");
         System.out.println("DOBRO DE UM NÚMERO");
+        System.out.println(" ");
 
         System.out.print("Digite o numero que quer descobrir o dobro" +
                 ", decimal ou inteiro: ");

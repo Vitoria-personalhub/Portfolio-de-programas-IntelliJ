@@ -1,0 +1,29 @@
+package Lista02;
+
+import java.util.Scanner;
+public class Ex01_PositivoNegativo {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.println(" ");
+        System.out.println("NÚMERO POSITIVO OU NEGATIVO");
+        System.out.println(" ");
+
+        double numero;
+
+        System.out.print("Informe um número para descobrir se ele" +
+                " é positivo ou negativo: ");
+        numero = input.nextDouble();
+
+        if (numero < 0 ) {
+            System.out.print("O número inserido é NEGATIVO."); }
+
+        else if (numero > 0 ) {
+            System.out.print("O número inserido é POSITIVO."); }
+
+        else {
+            System.out.println("O número inserido é INVÁLIDO."); }
+
+        System.out.println(" ");
+    }
+}

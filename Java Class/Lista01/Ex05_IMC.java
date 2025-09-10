@@ -1,13 +1,17 @@
+package Lista01;
+
 import java.util.Scanner;
 
 public class Ex05_IMC {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
+        System.out.println(" ");
+        System.out.println("CALCULADORA DE IMC");
+        System.out.println(" ");
+
         double altura;
         double peso;
-
-        System.out.println("CALCULADORA DE IMC");
 
         System.out.print("Para calcular seu IMC, informe sua altura(em metros): ");
         altura = input.nextDouble();

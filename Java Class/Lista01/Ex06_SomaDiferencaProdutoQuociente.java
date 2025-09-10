@@ -1,13 +1,17 @@
+package Lista01;
+
 import java.util.Scanner;
 
 public class Ex06_SomaDiferencaProdutoQuociente {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-    double RealNum1;
-    double RealNum2;
+        System.out.println(" ");
+        System.out.println("CÁLCULOS ENTRE DOIS NÚMEROS");
+        System.out.println(" ");
 
-    System.out.println("CÁLCULOS ENTRE DOIS NÚMEROS");
+        double RealNum1;
+        double RealNum2;
 
     System.out.print("Digite o primeiro número para cálculo: ");
     RealNum1 = input.nextDouble();
