@@ -15,7 +15,7 @@ public class Ex03_ParOuImpar {
                 "se ele é par ou ímpar: ");
         numero = input.nextInt();
 
-    //== é equivalente a uma comparação, enquanto um = é atribuição de valor a uma variável
+    //== (dois iguais) são equivalentes a uma comparação, enquanto = (um igual) é atribuição de valor a uma variável.
         if (numero % 2 == 0) {
             System.out.print("O número informado é PAR. 2️⃣");}
 
