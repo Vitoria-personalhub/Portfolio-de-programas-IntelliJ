@@ -16,6 +16,9 @@ public class Ex03_ParOuImpar {
         numero = input.nextInt();
 
     //== (dois iguais) são equivalentes a uma comparação, enquanto = (um igual) é atribuição de valor a uma variável.
+    // O símbolo de exclamação ( ! ) é para indicar diferença. Exemplo: numero !=-2 | O número indcado pelo usuário é diferente de 2. 
+    //Geralmente utilizado dentro de condicionais e é aplicável a esse caso.
+        
         if (numero % 2 == 0) {
             System.out.print("O número informado é PAR. 2️⃣");}
 
