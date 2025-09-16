@@ -40,7 +40,7 @@ public class Main {
                     System.out.println("Senha incorreta para o usuário admin! ❌");
                 }
 
-            //Aluno
+                //Aluno
             } else if (NomeDeUsuario.equals("aluno")) {
                 if (Senha == 0) { // Melhor utilizar 0 ao invés de 0000
                     System.out.print("""
@@ -53,7 +53,7 @@ public class Main {
                     System.out.println("Senha incorreta para o usuário aluno! ❌");
                 }
 
-            //Professor
+                //Professor
             } else if (NomeDeUsuario.equals("professor")) {
                 if (Senha == 4321) {
                     System.out.print("""
@@ -66,7 +66,7 @@ public class Main {
                     System.out.println("Senha incorreta para o usuário professor! ❌");
                 }
 
-            //Usuário não encontrado
+                //Usuário não encontrado
             } else {
                 System.out.println("Usuário não encontrado! ❌");
             }
