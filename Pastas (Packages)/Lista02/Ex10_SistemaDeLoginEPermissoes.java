@@ -19,7 +19,6 @@ public class Ex10_SistemaDeLoginEPermissoes {
         Scanner input = new Scanner(System.in);
 
         System.out.println("SISTEMA DE LOGIN E PERMISSÕES");
-
         int tentativas = 0;
         boolean acessoConcedido = false;
 
