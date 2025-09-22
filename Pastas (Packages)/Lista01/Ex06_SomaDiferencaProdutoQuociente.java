@@ -1,7 +1,14 @@
 package Lista01;
 
-import java.util.Scanner;
+// Exercício 06:
+// Peça ao usuário dois números reais. Mostre na tela:
+// - A soma
+// - A diferença
+// - O produto
+// - O quociente (divisão do primeiro pelo segundo)
 
+
+import java.util.Scanner;
 public class Ex06_SomaDiferencaProdutoQuociente {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
@@ -15,7 +22,6 @@ public class Ex06_SomaDiferencaProdutoQuociente {
 
     System.out.print("Digite o primeiro número para cálculo: ");
     RealNum1 = input.nextDouble();
-
     System.out.print("Digite o segundo número para cálculo: ");
     RealNum2 = input.nextDouble();
 

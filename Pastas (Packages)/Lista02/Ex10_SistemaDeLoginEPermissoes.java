@@ -1,74 +1,62 @@
 package Lista02;
 
+// Exercício 10:
+// Crie um programa em Java que simule um sistema de login simples com permissões de acesso.
+// O programa deve:
+// - Pedir ao usuário um nome de usuário e uma senha.
+// - Verificar se o nome de usuário e a senha estão corretos:
+// Usuário: "admin" /Senha: "1234" = acesso total (mostrar: "Bem-vindo, administrador!").
+// Usuário: "aluno" /Senha: "0000" = acesso restrito (mostrar: "Bem-vindo, aluno. Você pode consultar suas notas.").
+// Usuário: "professor" /Senha: "4321" = acesso parcial (mostrar: "Bem-vindo, professor. Você pode lançar notas.").
+// Observaçõs: Se o usuário existir, mas a senha estiver incorreta, mostrar "Senha incorreta".
+// Se o usuário não existir = mostrar "Usuário não encontrado".
+// Se o login falhar 3 vezes seguidas, o programa deve mostrar:
+// "Acesso bloqueado. Tente novamente mais tarde." e encerra.
+
 import java.util.Scanner;
 public class Ex10_SistemaDeLoginEPermissoes {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        System.out.println(" ");
         System.out.println("SISTEMA DE LOGIN E PERMISSÕES");
-        System.out.println(" ");
+        int tentativas = 0;
+        boolean acessoConcedido = false;
 
-        String NomeDeUsuario;
-        int Senha;
+        while (tentativas < 3 && !acessoConcedido) {
+            System.out.print("\nNOME DE USUÁRIO: ");
+            String usuario = input.next();
+            System.out.print("SENHA: ");
+            String senha = input.next(); // senha como String
+            System.out.println();
 
-        //Login
-        System.out.print("NOME DE USUÁRIO: ");
-        NomeDeUsuario = input.next();
-        System.out.print("SENHA: ");
-        Senha = input.nextInt();
-        System.out.println(" ");
-
-        //Listagem de usuários existentes
-        boolean usuarioExiste = NomeDeUsuario.equals("admin") ||
-                                NomeDeUsuario.equals("aluno") ||
-                                NomeDeUsuario.equals("professor");
-
-        //Administrador
-        if (NomeDeUsuario.equals("admin")) {
-            if (Senha == 1234) {
-                System.out.print("""
-                        [ACESSO TOTAL]
-                        
-                        Bem-vindo, administrador! 👑""");}
-            else {
-                System.out.println("Senha incorreta para o usuário admin! ❌");
-            }
-        }
-
-        //Aluno
-        else if (NomeDeUsuario.equals("aluno")) {
-            if (Senha == 0000) {
-                System.out.print("""
-                        [ACESSO RESTRITO]
-                        
-                        Bem-vindo, aluno! 🎓
-                        Você pode consultar suas notas.""");
+            if (usuario.equals("admin")) {
+                if (senha.equals("1234")) {
+                    System.out.println("[ACESSO TOTAL]");
+                    System.out.println("Bem-vindo, administrador! 👑");
+                    acessoConcedido = true;}
+                else {
+                    System.out.println("Senha incorreta ❌");}
+            } else if (usuario.equals("aluno")) {
+                if (senha.equals("0000")) {
+                    System.out.println("[ACESSO RESTRITO]");
+                    System.out.println("Bem-vindo, aluno! 🎓");
+                    System.out.println("Você pode consultar suas notas.");
+                    acessoConcedido = true;}
+                else {
+                    System.out.println("Senha incorreta ❌");}
+            } else if (usuario.equals("professor")) {
+                if (senha.equals("4321")) {
+                    System.out.println("[ACESSO PARCIAL]");
+                    System.out.println("Bem-vindo, professor! 👨‍🏫");
+                    System.out.println("Você pode lançar notas.");
+                    acessoConcedido = true;}
+                else {
+                    System.out.println("Senha incorreta ❌");}
             } else {
-                System.out.println("Senha incorreta para o usuário aluno! ❌");
-
-            }
-        }
-
-        //Professor
-        else if (NomeDeUsuario.equals("professor")) {
-                 if (Senha == 4321) {
-            System.out.print("""
-                    [ACESSO PARCIAL]
-                    
-                    Bem-vindo, professor! 👨‍🏫
-                    Você pode lançar notas.""");}
-                 else {
-                     System.out.println("Senha incorreta para o usuário professor! ❌");
-                 }
-            }
-
-        //usuário existir mas a senha estiver incorreta
-
-        //usuário não existir
-        else {
-            System.out.println("Usuário ou senha incorretos! ❌");}
-
-        System.out.println(" ");
+                System.out.println("Usuário não encontrado ❌");}
+            tentativas++;}
+        if (!acessoConcedido) {
+            System.out.println("\u001B[1m\u001B[31mACESSO BLOQUEADO.TENTE NOVAMENTE MAIS TARDE.\u001B[0m");}
     }
 }
+

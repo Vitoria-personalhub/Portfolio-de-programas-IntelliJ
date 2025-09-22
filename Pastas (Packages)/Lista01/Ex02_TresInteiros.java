@@ -1,7 +1,12 @@
 package Lista01;
 
-import java.util.Scanner;
+// Exercício 02:
+// eça ao usuário para digitar três números inteiros.
+// Em seguida, calcule e mostre:
+// - A soma dos três números
+// - A média aritmética entre eles
 
+import java.util.Scanner;
 public class Ex02_TresInteiros {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
@@ -10,10 +15,7 @@ public class Ex02_TresInteiros {
         int NumDois;
         int NumTres;
 
-        System.out.println(" ");
         System.out.println("MEDIA ARITMÉTICA - 3 NÚMEROS INTEIROS");
-        System.out.println(" ");
-
         System.out.print("Digite o primeiro número inteiro: ");
         NumUm = input.nextInt();
 
@@ -24,7 +26,6 @@ public class Ex02_TresInteiros {
         NumTres = input.nextInt();
 
         int media = (NumUm + NumDois + NumTres)/3;
-
         System.out.print("A média aritmética dos números ("
                 + NumUm + ", " + NumDois + ", " + NumTres +
                 ") é " + media +"." + "\n");
