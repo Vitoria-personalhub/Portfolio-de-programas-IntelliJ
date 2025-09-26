@@ -1,0 +1,20 @@
+🎨 Cores de Texto (Foreground)
+
+\u001B[30m → Preto
+\u001B[31m → Vermelho
+\u001B[32m → Verde
+\u001B[33m → Amarelo
+\u001B[34m → Azul
+\u001B[35m → Roxo (Magenta)
+\u001B[36m → Ciano
+\u001B[37m → Branco (cinza claro)
+
+🌈 Cores de Fundo (Background)
+\u001B[40m → Fundo Preto
+\u001B[41m → Fundo Vermelho
+\u001B[42m → Fundo Verde
+\u001B[43m → Fundo Amarelo
+\u001B[44m → Fundo Azul
+\u001B[45m → Fundo Roxo
+\u001B[46m → Fundo Ciano
+\u001B[47m → Fundo Branco

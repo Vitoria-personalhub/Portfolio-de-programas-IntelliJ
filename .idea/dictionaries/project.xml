@@ -11,6 +11,7 @@
       <w>aprovado</w>
       <w>arestas</w>
       <w>atingiu</w>
+      <w>bancario</w>
       <w>bancário</w>
       <w>baseado</w>
       <w>cada</w>
@@ -90,9 +91,12 @@
       <w>permissões</w>
       <w>peça</w>
       <w>pode</w>
+      <w>porcentagem</w>
       <w>positivo</w>
       <w>possamos</w>
       <w>precisaremos</w>
+      <w>prestacaomensal</w>
+      <w>pretensaomensal</w>
       <w>primeiro</w>
       <w>produto</w>
       <w>próxima</w>
@@ -102,6 +106,7 @@
       <w>quociente</w>
       <w>recuperação</w>
       <w>regras</w>
+      <w>rendamensal</w>
       <w>reprovado</w>
       <w>restrito</w>
       <w>seja</w>
@@ -125,6 +130,7 @@
       <w>valido</w>
       <w>valorcomdesconto</w>
       <w>valores</w>
+      <w>valorpermitido</w>
       <w>valortotal</w>
       <w>valorultrapassado</w>
       <w>verificar</w>
