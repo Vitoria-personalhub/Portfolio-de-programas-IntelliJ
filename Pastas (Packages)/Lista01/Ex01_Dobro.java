@@ -1,8 +1,9 @@
 package Lista01;
 
-// Exercício 01:
-// Peça ao usuário para digitar um número real (que pode ter
-// casas decimais) e calcule o seu dobro. Mostre o resultado.
+/* Exercício 01:
+ Peça ao usuário para digitar um número real (que pode ter
+ casas decimais) e calcule o seu dobro. Mostre o resultado.
+*/
 
 import java.util.Scanner;
 public class Ex01_Dobro {

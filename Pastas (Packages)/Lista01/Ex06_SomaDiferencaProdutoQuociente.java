@@ -1,12 +1,12 @@
 package Lista01;
 
-// Exercício 06:
-// Peça ao usuário dois números reais. Mostre na tela:
-// - A soma
-// - A diferença
-// - O produto
-// - O quociente (divisão do primeiro pelo segundo)
-
+/* Exercício 06:
+ Peça ao usuário dois números reais. Mostre na tela:
+ - A soma
+ - A diferença
+ - O produto
+ - O quociente (divisão do primeiro pelo segundo)
+*/
 
 import java.util.Scanner;
 public class Ex06_SomaDiferencaProdutoQuociente {

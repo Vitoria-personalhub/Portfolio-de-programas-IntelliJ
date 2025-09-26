@@ -1,8 +1,9 @@
 package Lista02;
 
-// Exercício 08:
-// Leia três valores e verifique se eles podem formar um triângulo. (Condição: cada lado
-// deve ser menor que a soma dos outros dois).
+/* Exercício 08:
+ Leia três valores e verifique se eles podem formar um triângulo.
+ Condição: cada lado deve ser menor que a soma dos outros dois.
+*/
 
 import java.util.Scanner;
 public class Ex08_TrianguloValidoOuNao {
@@ -10,9 +11,9 @@ public class Ex08_TrianguloValidoOuNao {
         Scanner input = new Scanner(System.in);
 
         System.out.println("VALIDADE DE TRIÂNGULO");
-        System.out.println("Para análise de validade, precisaremos que você insira" +
-                " o valor das três arestas.");
-        System.out.println(" ");
+        System.out.println("Para análise de validade, precisaremos que você insira o valor das três arestas.");
+
+        System.out.println(); // quebra de linha
 
         System.out.print("VALOR 01: ");
         int valor1 = input.nextInt();

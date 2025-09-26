@@ -1,8 +1,9 @@
 package Lista01;
 
-// Exercício 05:
-// Peça ao usuário sua altura (em metros) e seu peso (em kg).
-// Calcule o IMC (peso / altura²) e mostre o valor calculado.
+/* Exercício 05:
+ Peça ao usuário a sua altura (em metros) e o seu peso (em kg).
+ Calcule o IMC (peso / altura²) e mostre o valor calculado.
+ */
 
 import java.util.Scanner;
 public class Ex05_IMC {
@@ -10,13 +11,10 @@ public class Ex05_IMC {
         Scanner input = new Scanner(System.in);
 
         System.out.println("CALCULADORA DE IMC");
-        double altura;
-        double peso;
-
         System.out.print("Para calcular seu IMC, informe sua altura(em metros): ");
-        altura = input.nextDouble();
+        double altura = input.nextDouble();
         System.out.print("Agora, informe o seu peso(em quilogramas): ");
-        peso = input.nextDouble();
+        double peso = input.nextDouble();
 
         double IMC = peso / Math.pow(altura, 2);
         System.out.println("Seu IMC é = " + IMC);
