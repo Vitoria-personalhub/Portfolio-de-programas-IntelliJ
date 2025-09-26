@@ -1,0 +1,22 @@
+📌 Lesson Summary 005: Comparison Operators in Java
+/ Resumo da Aula 005: Operadores de Comparação em Java
+
+Video URL: https://youtu.be/LQjK4WiWhoM?si=Q0YoTc3Y6dwGC1FL
+
+- Equal to (==): Checks if two values are equal.
+/ Igual a (==): Verifica se dois valores são iguais.
+
+- Not equal to (!=): Checks if two values are not equal.
+/ Diferente de (!=): Verifica se dois valores são diferentes.
+
+- Greater than (>): Checks if the left value is greater than the right value.
+/ Maior que (>): Verifica se o valor à esquerda é maior que o valor à direita.
+
+- Greater than or equal to (>=): Checks if the left value is greater than or equal to the right value.
+/ Maior ou igual a (>=): Verifica se o valor à esquerda é maior ou igual ao valor à direita.
+
+- Less than (<): Checks if the left value is less than the right value.
+/ Menor que (<): Verifica se o valor à esquerda é menor que o valor à direita.
+
+- Less than or equal to (<=): Checks if the left value is less than or equal to the right value.
+/ Menor ou igual a (<=): Verifica se o valor à esquerda é menor ou igual ao valor à direita.

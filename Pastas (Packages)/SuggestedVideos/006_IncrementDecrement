@@ -1,0 +1,22 @@
+📌 Lesson Summary 006: Increment and Decrement Operators in Java
+/ Resumo da Aula 006: Operadores de Incremento e Decremento em Java
+
+Video URL: https://youtu.be/jRJqoplnK1U?si=Cj3NGaKicJ615lqR
+
+- Increment (++): Increases a variable's value by 1.
+/ Incremento (++): Aumenta o valor de uma variável em 1.
+
+- Decrement (--): Decreases a variable's value by 1.
+/ Decremento (--): Diminui o valor de uma variável em 1.
+
+- Pre-increment (++x): Increments the variable's value before using it in an expression.
+/ Pré-incremento (++x): Incrementa o valor da variável antes de usá-la em uma expressão.
+
+- Post-increment (x++): Uses the variable's current value in an expression, then increments it.
+/ Pós-incremento (x++): Usa o valor atual da variável em uma expressão e, em seguida, a incrementa.
+
+- Pre-decrement (--x): Decrements the variable's value before using it in an expression.
+/ Pré-decremento (--x): Diminui o valor da variável antes de usá-la em uma expressão.
+
+- Post-decrement (x--): Uses the variable's current value in an expression, then decrements it.
+/ Pós-decremento (x--): Usa o valor atual da variável em uma expressão e, em seguida, a diminui.

@@ -1,0 +1,19 @@
+📌 Lesson Summary: Conditional Statements in Java (if-else)
+/ Resumo da Aula 007: Estruturas Condicionais em Java (if-else)
+
+Video URL: https://youtu.be/BLCqCt89y1Y?si=jUh7i3B565ryGCL4
+
+- if statement: Executes a block of code if a specified condition is true.
+/ Declaração if: Executa um bloco de código se uma condição especificada for verdadeira.
+
+- else statement: Executes a block of code if the condition in the if statement is false.
+/ Declaração else: Executa um bloco de código se a condição na declaração if for falsa.
+
+- else if statement: Specifies a new condition to test if the first condition is false.
+/ Declaração else if: Especifica uma nova condição para testar se a primeira condição for falsa.
+
+- Nested if statements: An if statement inside another if statement.
+/ Declarações if aninhadas: Uma declaração if dentro de outra declaração if.
+
+- Logical operators: Used to combine multiple conditions.
+/ Operadores lógicos: Usados para combinar múltiplas condições.

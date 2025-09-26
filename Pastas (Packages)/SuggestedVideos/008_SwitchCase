@@ -1,0 +1,37 @@
+📌 Lesson Summary: switch-case Statement in Java
+/ Resumo da Aula 008: Estrutura switch-case em Java
+
+Video URL: https://youtu.be/nBd8C0mrRys?si=DtXmUG6WsTtgqscN
+
+- switch statement: Evaluates an expression and executes the corresponding case block.
+/ Declaração switch: Avalia uma expressão e executa o bloco de código correspondente ao case.
+
+- case label: Defines a specific value to match in the switch statement.
+/ Rótulo case: Define um valor específico para comparar na declaração switch.
+
+- break statement: Exits the switch statement after a case block is executed.
+/ Declaração break: Encerra a execução da declaração switch após um bloco case ser executado.
+
+- default case: Specifies a block of code to execute if no case matches.
+/ Caso default: Especifica um bloco de código a ser executado se nenhum case corresponder.
+
+- fall-through behavior: Omitting break allows execution to "fall through" to the next case.
+/ Comportamento de queda: Omissão do break permite que a execução "caia" para o próximo case.
+
+Example code | Exemplo de código:
+
+int day = 3;
+
+switch (day) {
+    case 1:
+        System.out.println("Monday"); | Segunda-feira
+        break;
+    case 2:
+        System.out.println("Tuesday"); | Terça-feira
+        break;
+    case 3:
+        System.out.println("Wednesday"); | Quarta-feira
+        break;
+    default:
+        System.out.println("Other day"); | Outro dia
+}
