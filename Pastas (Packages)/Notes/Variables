@@ -1,0 +1,21 @@
+(PT-BR)
+int idade = 25;             // inteiro
+double preco = 49.90;       // decimal
+char letra = 'A';           // caractere
+boolean ativo = true;       // verdadeiro ou falso
+String nome = "Vitória";    // texto
+Scanner input = new Scanner(System.in); // objeto Scanner
+
+// Exemplo de array (lista)
+int[] numeros = {1, 2, 3, 4, 5};
+
+(ENG-US)
+int age = 25;               // integer
+double price = 49.90;       // decimal number
+char letter = 'A';          // single character
+boolean active = true;      // true or false
+String name = "Vitória";    // text / string
+Scanner input = new Scanner(System.in); // Scanner object for user input
+
+// Example of an array (list)
+int[] numbers = {1, 2, 3, 4, 5};  // array of integers
