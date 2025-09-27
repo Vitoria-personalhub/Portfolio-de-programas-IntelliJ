@@ -11,7 +11,7 @@ Regras adicionais:
  - Se o valor total da conta ultrapassar R$200,00, aplicar um desconto de 10%.
  - Se o valor da conta for inferior a R$30,00, informar que o valor não será cobrado neste mês. Será somado à
  próxima conta.
-    */
+*/
 
 import java.util.Scanner;
 
