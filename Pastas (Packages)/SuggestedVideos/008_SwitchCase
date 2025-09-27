@@ -20,18 +20,22 @@ Video URL: https://youtu.be/nBd8C0mrRys?si=DtXmUG6WsTtgqscN
 
 Example code | Exemplo de código:
 
-int day = 3;
+public class SwitchCaseExample {
+    public static void main(String[] args) {
+        int dayOfWeek = 3; // Example: 3 represents Tuesday
+        String dayName;
 
-switch (day) {
-    case 1:
-        System.out.println("Monday"); | Segunda-feira
-        break;
-    case 2:
-        System.out.println("Tuesday"); | Terça-feira
-        break;
-    case 3:
-        System.out.println("Wednesday"); | Quarta-feira
-        break;
-    default:
-        System.out.println("Other day"); | Outro dia
+        switch(dayOfWeek) {
+            case 1: dayName = "Sunday"; break;
+            case 2: dayName = "Monday"; break;
+            case 3: dayName = "Tuesday"; break;
+            case 4: dayName = "Wednesday"; break;
+            case 5: dayName = "Thursday"; break;
+            case 6: dayName = "Friday"; break;
+            case 7: dayName = "Saturday"; break;
+            default: dayName = "Invalid day"; break;
+        }
+
+        System.out.println("The day of the week is: " + dayName);
+    }
 }
