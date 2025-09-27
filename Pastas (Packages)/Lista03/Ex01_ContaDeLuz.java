@@ -14,6 +14,7 @@ Regras adicionais:
     */
 
 import java.util.Scanner;
+
 public class Ex01_ContaDeLuz {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
@@ -22,36 +23,39 @@ public class Ex01_ContaDeLuz {
         System.out.print("Insira a quantidade de energia consumida durante UM mês (kWh): ");
         double energia = input.nextDouble();
 
-        // Cálculo do valor base
         double valor;
+
+        // Cálculo do valor base usando if-else if para intervalos, que é a forma mais clara
         if (energia <= 100) {
             valor = energia * 0.50;
-        } else if (energia <= 200) {
+        } else if (energia <= 200) { // Implica automaticamente que energia > 100
             valor = energia * 0.70;
-        } else {
+        } else { // Implica automaticamente que energia > 200
             valor = energia * 0.90;
         }
 
-        System.out.println(); // quebra de linha
+        System.out.println(); // Quebra de linha
 
         // Mensagem de consumo elevado
         if (energia > 500) {
             System.out.println("\u001B[33mConsumo elevado: considere economizar energia.\u001B[0m");
         }
 
-        // Desconto aplicado
+        // Aplicação de desconto
         if (valor > 200) {
             double desconto = valor * 0.10;
             valor -= desconto;
             System.out.printf("\u001B[32mFoi aplicado um desconto de 10%%: -R$ %.2f\u001B[0m%n", desconto);
         }
 
-        // Conta muito baixa
+        // Verificação de conta muito baixa
         if (valor < 30) {
             System.out.println("\u001B[31mO valor da conta foi inferior a R$30. Nada será cobrado este mês e será somado à próxima conta.\u001B[0m");
         } else {
-            // Conta normal
+            // Exibição da conta normal
             System.out.printf("\u001B[36mSua conta de luz é: R$ %.2f\u001B[0m%n", valor);
         }
+
+        input.close(); // Fechar o scanner
     }
 }

@@ -14,6 +14,7 @@ package Lista03;
 */
 
 import java.util.Scanner;
+
 public class Ex02_FinanciamentoBancario {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
@@ -27,19 +28,35 @@ public class Ex02_FinanciamentoBancario {
         double prestacaomensal = input.nextDouble();
 
         System.out.println(" ");
-        // Ela pode assumir a pretensão com segurança se:
-        // 1- O valor não ultrapassar 30% da sua renda mensal
-        if (prestacaomensal > 3000 && rendamensal < 10000) {
-            System.out.println("\u001B[1m\u001B[31mFinanciamento negado por baixa renda.\u001B[0m");
 
-        // 2 - Se a prestação > R$3.000, exigir renda mensal ≧ R$10.000
-        } else if (prestacaomensal > rendamensal * 0.3) {
-            double valorpermitido = rendamensal * 0.3;
-            System.out.printf("A prestação ultrapassa 30%% de sua renda mensal (Limite permitido: R$ %.2f)\n", valorpermitido);
-            System.out.println("\u001B[1m\u001B[31mFinanciamento negado por alta prestação.\u001B[0m");
-        } else {
+        // Lógica de verificação de elegibilidade para o financiamento
+        boolean financiamentoAprovado = true;
+        String motivoNegacao = "";
+
+        // Regra 2: Se a prestação > R$3.000, exige renda mensal ≥ R$10.000
+        if (prestacaomensal > 3000 && rendamensal < 10000) {
+            financiamentoAprovado = false;
+            motivoNegacao = "\u001B[1m\u001B[31mFinanciamento negado por baixa renda (prestação" +
+                    " > R$3.000 exige renda >= R$10.000).\u001B[0m";
+        }
+        // Regra 1: A prestação não pode ultrapassar 30% da renda mensal
+        // Este 'else if' garante que esta condição só será verificada se a primeira (da prestação > 3000)
+        // não for a razão da negação
+        else if (prestacaomensal > rendamensal * 0.3) {
+            financiamentoAprovado = false;
+            double limitePrestacaoPermitido = rendamensal * 0.3;
+            motivoNegacao = String.format("A prestação ultrapassa 30%% de sua renda mensal " +
+                    "(Limite permitido: R$ %.2f)\n", limitePrestacaoPermitido) +
+                    "\u001B[1m\u001B[31mFinanciamento negado por alta prestação.\u001B[0m";
+        }
+
+        if (financiamentoAprovado) {
             System.out.println("\u001B[1m\u001B[32mFinanciamento aprovado.\u001B[0m");
             System.out.println("O empréstimo poderá ser realizado com segurança.");
+        } else {
+            System.out.println(motivoNegacao);
         }
+
+        input.close(); // Fechar o scanner
     }
 }
